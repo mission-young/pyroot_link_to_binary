@@ -1,6 +1,6 @@
 PYTHON_VERSION = $(shell python3 -V 2>&1 | sed -E 's/Python ([0-9]+\.[0-9]+).*/\1/')
 PYTHON_INCLUDE_DIR ?= /usr/include/python${PYTHON_VERSION}m
-PYTHON_LIBRARY_DIR ?= /usr/lib/${PYTHON_VERSION}
+PYTHON_LIBRARY_DIR ?= /usr/lib/python${PYTHON_VERSION}
 
 default: libPyROOT.so
 
